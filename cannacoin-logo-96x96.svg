@@ -1,0 +1,111 @@
+<svg viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg" width="96" height="96">
+  <defs>
+    <!-- Metallic coin gradient -->
+    <radialGradient id="coinGradient" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" style="stop-color:#f4e4c1;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#d4af37;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#b8941e;stop-opacity:1" />
+    </radialGradient>
+    
+    <!-- Edge gradient for 3D effect -->
+    <linearGradient id="edgeGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#e6d5b8;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#c9a961;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8b7914;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Leaf gradient -->
+    <linearGradient id="leafGradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#22c55e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#16a34a;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="leafGradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4ade80;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#22c55e;stop-opacity:1" />
+    </linearGradient>
+    
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-opacity="0.4"/>
+    </filter>
+    
+    <filter id="leafShadow">
+      <feDropShadow dx="0" dy="1" stdDeviation="2" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- Drop shadow for depth -->
+  <ellipse cx="48" cy="50" rx="42" ry="8" fill="#000000" opacity="0.2"/>
+  
+  <!-- Outer beveled edge (dark) -->
+  <circle cx="48" cy="48" r="47" fill="none" stroke="#5c4a1a" stroke-width="1.5" opacity="0.8"/>
+  
+  <!-- Main coin surface -->
+  <circle cx="48" cy="48" r="45" fill="url(#coinGradient)"/>
+  
+  <!-- Coin ridge texture -->
+  <circle cx="48" cy="48" r="45" fill="none" stroke="#c9a961" stroke-width="0.3" opacity="0.4" stroke-dasharray="1,1"/>
+  
+  <!-- Inner ring border -->
+  <circle cx="48" cy="48" r="42" fill="none" stroke="#8b7914" stroke-width="0.5" opacity="0.6"/>
+  
+  <!-- Highlight on top-left (3D effect) -->
+  <ellipse cx="32" cy="32" rx="20" ry="18" fill="#ffffff" opacity="0.25"/>
+  
+  <!-- Cannabis Leaf (accurate botanical design) -->
+  <g transform="translate(48, 36)">
+    <!-- Main stem -->
+    <line x1="0" y1="-6" x2="0" y2="12" stroke="#15803d" stroke-width="1.3" stroke-linecap="round"/>
+    
+    <!-- TOP CENTER LEAFLET (primary, largest) -->
+    <path d="M 0 -12 L -1.2 -8 L -1.5 -4 L -1 0 L 0 2 L 1 0 L 1.5 -4 L 1.2 -8 Z" fill="url(#leafGradient1)" stroke="#15803d" stroke-width="0.3"/>
+    <!-- Serrated edge details -->
+    <path d="M -0.8 -10 L -1.3 -8.5 M -0.5 -6 L -1.4 -5 M -0.3 -2 L -1.2 -0.5 M 0.8 -10 L 1.3 -8.5 M 0.5 -6 L 1.4 -5 M 0.3 -2 L 1.2 -0.5" stroke="#15803d" stroke-width="0.25" fill="none" opacity="0.6"/>
+    
+    <!-- UPPER LEFT LEAFLET -->
+    <path d="M -1 -8 L -4.5 -7 L -6 -4 L -6.2 0 L -5 1.5 L -3 -1 L -2 -5 Z" fill="url(#leafGradient2)" stroke="#15803d" stroke-width="0.3"/>
+    <!-- Serrated edges -->
+    <path d="M -4 -7 L -5 -5.5 M -5.5 -4 L -6.3 -1.5 M -5.5 1 L -4 0.5" stroke="#15803d" stroke-width="0.25" fill="none" opacity="0.6"/>
+    
+    <!-- UPPER RIGHT LEAFLET -->
+    <path d="M 1 -8 L 4.5 -7 L 6 -4 L 6.2 0 L 5 1.5 L 3 -1 L 2 -5 Z" fill="url(#leafGradient1)" stroke="#15803d" stroke-width="0.3"/>
+    <!-- Serrated edges -->
+    <path d="M 4 -7 L 5 -5.5 M 5.5 -4 L 6.3 -1.5 M 5.5 1 L 4 0.5" stroke="#15803d" stroke-width="0.25" fill="none" opacity="0.6"/>
+    
+    <!-- MIDDLE LEFT LEAFLET -->
+    <path d="M -1.5 -2 L -6 1 L -7.5 4 L -7.2 7 L -5.5 7.5 L -3.5 4 L -2.5 0 Z" fill="url(#leafGradient1)" stroke="#15803d" stroke-width="0.3"/>
+    <!-- Serrated edges -->
+    <path d="M -6 1.5 L -7.2 3 M -7 5 L -6.8 7 M -5.5 7 L -4.5 5" stroke="#15803d" stroke-width="0.25" fill="none" opacity="0.6"/>
+    
+    <!-- MIDDLE RIGHT LEAFLET -->
+    <path d="M 1.5 -2 L 6 1 L 7.5 4 L 7.2 7 L 5.5 7.5 L 3.5 4 L 2.5 0 Z" fill="url(#leafGradient2)" stroke="#15803d" stroke-width="0.3"/>
+    <!-- Serrated edges -->
+    <path d="M 6 1.5 L 7.2 3 M 7 5 L 6.8 7 M 5.5 7 L 4.5 5" stroke="#15803d" stroke-width="0.25" fill="none" opacity="0.6"/>
+    
+    <!-- LOWER LEFT LEAFLET (smaller) -->
+    <path d="M -0.8 3 L -4.5 5 L -5.5 7.5 L -4.5 8.5 L -2.5 6 L -1.5 4 Z" fill="url(#leafGradient2)" stroke="#15803d" stroke-width="0.3"/>
+    <!-- Serrated edges -->
+    <path d="M -4.5 5.5 L -5.2 6.5 M -4.8 8 L -4 8" stroke="#15803d" stroke-width="0.25" fill="none" opacity="0.6"/>
+    
+    <!-- LOWER RIGHT LEAFLET (smaller) -->
+    <path d="M 0.8 3 L 4.5 5 L 5.5 7.5 L 4.5 8.5 L 2.5 6 L 1.5 4 Z" fill="url(#leafGradient1)" stroke="#15803d" stroke-width="0.3"/>
+    <!-- Serrated edges -->
+    <path d="M 4.5 5.5 L 5.2 6.5 M 4.8 8 L 4 8" stroke="#15803d" stroke-width="0.25" fill="none" opacity="0.6"/>
+  </g>
+  
+  <!-- Coin text section background circle -->
+  <circle cx="48" cy="70" r="12" fill="#000000" opacity="0.08"/>
+  
+  <!-- CAN text -->
+  <text x="48" y="74" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="bold" text-anchor="middle" fill="#8b7914" letter-spacing="1.5" font-style="italic">CAN</text>
+  
+  <!-- Decorative dots -->
+  <circle cx="38" cy="70" r="1" fill="#8b7914" opacity="0.6"/>
+  <circle cx="58" cy="70" r="1" fill="#8b7914" opacity="0.6"/>
+  
+  <!-- Inner highlight circle -->
+  <circle cx="48" cy="48" r="40" fill="none" stroke="#ffffff" stroke-width="0.5" opacity="0.15"/>
+  
+  <!-- Outer light reflection (edge highlight) -->
+  <path d="M 20 35 A 28 28 0 0 1 28 20" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.2" stroke-linecap="round"/>
+</svg>
